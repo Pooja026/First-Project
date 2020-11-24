@@ -22,12 +22,13 @@ agent any
   {
   when{
   not{
-  branch 'main'
+  branch "main"
   }
   }
   steps
   {
-  echo 'hello'
+  echo "hello"
   }
   }
+}
 }
