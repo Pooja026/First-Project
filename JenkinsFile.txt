@@ -42,12 +42,12 @@ echo "Running the unit test..."
 }
 stage('Integration test')
 {
-agent{
-docker{
+agent any{
+
 reuseNode false
 image 'ubuntu'
 }
-}
+
 steps
 {
 echo 'Running the Integration test..'
