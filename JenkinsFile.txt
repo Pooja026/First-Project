@@ -30,7 +30,6 @@ agent any
   echo "hello"
   }
   }
-}
 stage('Four')
 {
 parallel
@@ -52,6 +51,8 @@ image 'ubuntu'
 steps
 {
 echo 'Running the Integration test..'
+}
+}
 }
 }
 }
