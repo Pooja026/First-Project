@@ -30,31 +30,5 @@ agent any
   echo "hello"
   }
   }
-stage('Four')
-{
-parallel
-{
-stage('unit Test')
-{
-steps{
-echo "Running the unit test..."
-}
-}
-stage('Integration test')
-{
-agent any{
-
-reuseNode false
-image 'ubuntu'
-}
-
-steps
-{
-echo 'Running the Integration test..'
-}
-}
-}
-}
-}
-}
+}}
 
